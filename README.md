@@ -1,18 +1,20 @@
 # LimTopic: LLM-based Topic Modeling and Text Summarization for Analyzing Scientific Articles limitations
 
+## Description:
+This work uses various LLM with BERTopic to generate topics, titles, and relevant text in a scientific article's 'limitation' section. 
+This work includes experiments, including Prompt Engineering, Fine-tuning LLM, BERTopic, and integrating various LLMs with BERTopic. Also, it includes text summarization with LLM to generate a very cohesive
+'relevant text' of each topic.
 
-Step 1: 
-## Create a virtual environment:
+### Create a virtual environment: (Step 1): 
 mkdir my_project 
 
 cd my_project
 
-Step 2: 
-## Activate the virtual environment
+### Activate the virtual environment (Step 2): 
 env\Scripts\activate (windows)
 
 source env/bin/activate
 
-Step 3:
-## install related libraries
+### install related libraries (Step 3):
 pip install -r requirements.txt
+
