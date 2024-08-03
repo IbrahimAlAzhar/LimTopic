@@ -24,27 +24,51 @@ pip install -r requirements.txt
 
 ### Dataset 
 
-## Project Directory Structure
-
-Here is an overview of the project's folder structure:
+Here is an overview of the Dataset's (pre-processed Limitation sections data of ACL 23) folder structure:
 
 ```plaintext
-Project_Root/
+Datasets/
 │
-├── All Data/                # Source files
+├── All Data/                
 │   ├──df_all_data.csv   # combined all dataset (Limitation sections of ACL 2023)
-│   ├── module1.py      # Sample module
-│   └── module2.py      # Another module
 │
-├── data/               # Data files
-│   ├── datafile1.csv   # Sample data file
-│   └── datafile2.csv   # Another data file
+├── Biomedical NLP /               
+│   ├── df_bioNLP.csv   # dataset of bioNLP
 │
-├── tests/              # Test scripts
-│   ├── test1.py        # Test script for module1
-│   └── test2.py        # Test script for module2
+├── Clinical NLP data/             
+│   ├── df_clinical_nlp.csv   # dataset of clinical NLP      
 │
-├── docs/               # Documentation files
-│   └── README.md       # Project documentation
+├── Computation and written language data/               
+│   └── df_CAWL_2023.csv       # datast of CAWL 2023
+│
+├── Computational approaches data /               
+│   ├── df_computational_approaches.csv   # dataset of computational approaches
+│
+├── Computational approaches to discourse data/             
+│   ├── df_CODI23.csv     # dataset of CODI 23 
+│
+├── Dialogue and conversational QA data/               
+│   └── df_third_dialdoc.csv       # datast of third dialdoc
+|
+├── Discourse relation parsing treebanking data /               
+│   ├── df_DISRPT.csv   # dataset of DISRPT
+│
+├── Findings ACL data/             
+│   ├── df_findings_acl.csv   # dataset of findings ACL
+│
+├── Indigenous Language of the Americas (AmericasNLP) data/               
+│   └── df_americasNLP.csv       # datast of americas NLP
+│
+├── Industry track /               
+│   ├── df_industry_track.csv   # dataset of industry track
+│
+├── Long Papers data/             
+│   ├── df_long.csv     # dataset of long papers
+│
+├── Matching from unstructured and structed data/               
+│   └── df_matching_2023.csv      # datast of matching 2023
+|
+├── NLP for Building Educational Applications (BEA) data/               
+│   └── df_BEA_2023.csv       # datast of BEA
 │
 └── requirements.txt    # Project dependencies
