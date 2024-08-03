@@ -5,7 +5,6 @@ This work uses various LLM with BERTopic to generate topics, titles, and relevan
 This work includes experiments, including Prompt Engineering, Fine-tuning LLM, BERTopic, and integrating various LLMs with BERTopic. Also, it includes text summarization with LLM to generate a very cohesive
 'relevant text' of each topic.
 
-https://github.com/user-attachments/files/16478680/Bertopic.drawio.pdf
 
 
 
