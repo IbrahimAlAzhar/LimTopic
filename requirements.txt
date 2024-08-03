@@ -1,0 +1,46 @@
+﻿!pip install bertopic
+!pip install keybert
+!pip -q install accelerate peft bitsandbytes transformers trl
+!pip -q install bertopic
+!pip -q install tiktoken openai
+!pip install torch transformers
+!
+
+!pip install ctransformers[cuda]
+!pip install --upgrade git+https://github.com/huggingface/transformers
+!pip install ctransformers
+
+
+!pip -q install accelerate peft bitsandbytes transformers trl
+!pip -q install bertopic
+!pip -q install tiktoken openai
+
+!pip -q install langchain
+!pip -q install openai
+!pip -q install python-dotenv
+!pip -q install langchain_openai
+!pip -q install tiktoken
+!pip -q install langchain_experimental
+!pip -q install langchain[all]
+
+!pip -q install openai tiktoken chromadb langchain
+
+!pip install openai
+!pip install -q accelerate==0.21.0 peft==0.4.0 bitsandbytes==0.40.2 transformers==4.31.0 trl==0.4.7
+
+!pip3 -q install trl
+!pip -q install --upgrade pyarrow
+!pip -q uninstall pyarrow
+!pip -q install pyarrow
+
+!pip -q install langchain
+!pip -q install openai
+!pip -q install python-dotenv
+!pip -q install langchain_openai
+!pip -q install tiktoken
+!pip -q install langchain_experimental
+!pip -q install langchain[all]
+!pip -q install sentence_transformers
+
+!pip install faker
+
