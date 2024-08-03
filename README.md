@@ -1,2 +1,2 @@
-https://github.com/user-attachments/files/16478523/lim.section.archi.diagram.pdf
-
+# install related libraries
+pip install -r requirements.txt
