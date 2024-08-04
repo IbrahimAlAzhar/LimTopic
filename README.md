@@ -21,6 +21,39 @@ source env/bin/activate
 ### install related libraries (Step 3):
 pip install -r requirements.txt
 
+### Code 
+
+Here is an overview of the code folder structure:
+
+```plaintext
+code/
+│
+├── LLM Prompt/                
+│   ├── Prompt_Engineering.ipynb   # code regarding prompt engineering process to LLM to generate topics, title, and relevant text
+│
+├── Fine tuned LLM /               
+│   ├── Llama_fine_tuning.ipynb   # code reagarding fine tuning of Llama 2 for generating topics, title, and relevant text
+│
+├── BERTopic /             
+│   ├── BERTopic.ipynb   # applying BERTopic to generate topics (topic words) and representative docs of each topic      
+│
+├── BERTopic + LLM /    # various model and LLMs used with BERTopic to generate topic titles with relevant text           
+│    └── LDA.ipynb      # use Latent Dirchlet Allocation (LDA) to model to generate topics, and aggregrate texts of each topic
+│    ├── Llama_2.ipynb  # used Llama 2 intergrating with BERTopic to generate title, and relevant text (result is not good)
+│    ├── Mistral.ipynb  # used Mistral intergrating with BERTopic to generate title, and relevant text (result is not good). One of the main reason is token limit 512 
+│    ├── gpt_3_5.ipynb  # used GPT 3.5 api after applying BERTopic to generate title, and relvant text. Title was good but not relevant text
+│    ├── Llama_13b.ipynb # the performance was almost similar to Llama 2 
+│    ├── gpt_4.ipynb    # integrating GPT 4 after applying BERTopic provides best results and the titles, relevant text is very good
+|
+├── Data preprocessing /               
+│   ├── Data_preprocessing.ipynb  # taking the dataset and apply pre processing, such as remove unnessary text, links, symbols. 
+|
+├── LLM text summarization /               
+│   ├── Text_summarization.ipynb  # taking the 'representative docs' after applying BERTopic and apply LLM text summarizer to get very relevant, cohesive 'relevant text'
+|
+├── visualization /               
+│   ├── keyBERT_and_Visualization.ipynb  # apply `keyBERT' in 'representative docs' to generate coherence score and various visualization such as heatmap, hierarchical clustering, 
+
 
 ### Dataset 
 
@@ -102,40 +135,9 @@ Datasets/
 │   └── df_trust_NLP.csv     # datast of trust NLP
 |
 ├── short papers data/               
-   └── df_short.csv     # datast of short papers ```
+   └── df_short.csv     # datast of short papers 
 
 
-### Code 
 
-Here is an overview of the code folder structure:
-
-```plaintext
-Datasets/
-│
-├── LLM Prompt/                
-│   ├── Prompt_Engineering.ipynb   # code regarding prompt engineering process to LLM to generate topics, title, and relevant text
-│
-├── Fine tuned LLM /               
-│   ├── Llama_fine_tuning.ipynb   # code reagarding fine tuning of Llama 2 for generating topics, title, and relevant text
-│
-├── BERTopic /             
-│   ├── BERTopic.ipynb   # applying BERTopic to generate topics (topic words) and representative docs of each topic      
-│
-├── BERTopic + LLM /    # various model and LLMs used with BERTopic to generate topic titles with relevant text           
-│    └── LDA.ipynb      # use Latent Dirchlet Allocation (LDA) to model to generate topics, and aggregrate texts of each topic
-│    ├── Llama_2.ipynb  # used Llama 2 intergrating with BERTopic to generate title, and relevant text (result is not good)
-│    ├── Mistral.ipynb  # used Mistral intergrating with BERTopic to generate title, and relevant text (result is not good). One of the main reason is token limit 512 
-│    ├── gpt_3_5.ipynb  # used GPT 3.5 api after applying BERTopic to generate title, and relvant text. Title was good but not relevant text
-│    ├── Llama_13b.ipynb # the performance was almost similar to Llama 2 
-│    ├── gpt_4.ipynb    # integrating GPT 4 after applying BERTopic provides best results and the titles, relevant text is very good
-|
-├── Data preprocessing /               
-│   ├── Data_preprocessing.ipynb  # taking the dataset and apply pre processing, such as remove unnessary text, links, symbols. 
-|
-├── LLM text summarization /               
-│   ├── Text_summarization.ipynb  # taking the 'representative docs' after applying BERTopic and apply LLM text summarizer to get very relevant, cohesive 'relevant text'
-|
-├── visualization /               
-│   ├── keyBERT_and_Visualization.ipynb  # apply `keyBERT' in 'representative docs' to generate coherence score and various visualization such as heatmap, hierarchical clustering, 
  
 
