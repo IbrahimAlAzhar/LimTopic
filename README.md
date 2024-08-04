@@ -21,6 +21,17 @@ source env/bin/activate
 ### install related libraries (Step 3):
 pip install -r requirements.txt
 
+### code workflow (how to run)
+1. load the dataset from '/Datasets/All Data'
+2. or load every single category data from 'Datasets/...' and aggregrate
+3. Run the 'Data_preprocesing.ipynb' file after loading the datasets, it will generate a new file name 'df.csv' (pre-processed file)
+4. Can load this 'df.csv' file into 'LLM Prompt/Prompt_Engineering.ipynb',  file for prompt engineering
+5. Can load this 'df.csv' file into 'Fine tuned LLM/Llama_fine_tuning.ipynb' file for fine tuning with Llama
+6. Can load this 'df.csv' file into 'BERTopic/BERTopic.ipynb' file for topic modeling with BERTopic. and it will generate a new file 'df_bertopic.csv' file
+7. Can load this 'df.csv' file into 'BERTopic + LLM/LDA.ipynb', 'BERTopic + LLM/Llama_2.ipynb', 'BERTopic + LLM/Mistral.ipynb', 'BERTopic + LLM/gpt_3_5.ipynb', 'BERTopic + LLM/Llama_13b.ipynb', 'BERTopic + LLM/gpt_4.ipynb' file
+   for topic modeling with LDA and other LLMs. 
+9. Load the file 'df_bertopic.csv' into 'LLM text summarization/Text_Summarization.ipynb' for text summarization
+
 ## Code and Datasets
 
 ```plaintext
@@ -136,8 +147,3 @@ Datasets/
 |
 ├── short papers data/               
    └── df_short.csv     # datast of short papers 
-
-
-
- 
-
