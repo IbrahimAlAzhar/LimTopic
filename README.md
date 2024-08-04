@@ -31,6 +31,7 @@ pip install -r requirements.txt
 7. Can load this 'df.csv' file into 'BERTopic + LLM/LDA.ipynb', 'BERTopic + LLM/Llama_2.ipynb', 'BERTopic + LLM/Mistral.ipynb', 'BERTopic + LLM/gpt_3_5.ipynb', 'BERTopic + LLM/Llama_13b.ipynb', 'BERTopic + LLM/gpt_4.ipynb' file
    for topic modeling with LDA and other LLMs. 
 9. Load the file 'df_bertopic.csv' into 'LLM text summarization/Text_Summarization.ipynb' for text summarization
+10. Load the 'df.csv' file into 'visualization/keyBERT_and_visualization.ipynb' file for generating coherence score using keyBERT and various visualization (here used 'gpt-4')
 
 ## Code and Datasets
 
