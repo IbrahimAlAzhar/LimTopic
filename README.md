@@ -21,11 +21,10 @@ source env/bin/activate
 ### install related libraries (Step 3):
 pip install -r requirements.txt
 
-### Code 
-
-Here is an overview of the code folder structure:
+## Code
 
 ```plaintext
+
 code/
 │
 ├── LLM Prompt/                
@@ -55,11 +54,12 @@ code/
 │   ├── keyBERT_and_Visualization.ipynb  # apply `keyBERT' in 'representative docs' to generate coherence score and various visualization such as heatmap, hierarchical clustering, 
 
 
-### Dataset 
+#### Dataset 
 
 Here is an overview of the Dataset's (pre-processed Limitation sections data of ACL 23) folder structure:
+```markdown
+## Dataset Directory Structure
 
-```plaintext
 Datasets/
 │
 ├── All Data/                
