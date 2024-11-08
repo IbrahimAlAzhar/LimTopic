@@ -6,9 +6,9 @@ This work includes experiments, including Prompt Engineering, Fine-tuning LLM, B
 'relevant text' of each topic.
 
 
-<!--![Screenshot from 2024-08-03 03-28-07](https://github.com/user-attachments/assets/a45bf4d0-ca25-4194-b625-8b39ff382d2d)  -->
+[Screenshot from 2024-08-03 03-28-07](https://github.com/user-attachments/assets/a45bf4d0-ca25-4194-b625-8b39ff382d2d) 
 
-![Alt text for image](your-image-path](https://github.com/IbrahimAlAzhar/LimTopic/blob/master/archi.png)
+
 
 
 ### Create a virtual environment: (Step 1): 
